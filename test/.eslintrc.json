@@ -1,0 +1,16 @@
+{
+  "extends": "../.eslintrc.json",
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "rules": {
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [["^\\u0000"], ["^node:"], ["^@?\\w"], ["^@/", "^@test/"], ["^\\."]]
+          }
+        ]
+      }
+    }
+  ]
+}

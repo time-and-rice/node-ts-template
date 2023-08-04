@@ -1,5 +1,7 @@
 # node-ts-template
 
+## TODO
+
 - [x] ESLint
   - yarn add -D eslint
   - yarn eslint --init
@@ -13,4 +15,11 @@
   - yarn add dotenv-cli
 - [x] Restart Dev Server
   - yarn add -D nodemon
-- [] Test
+- [x] Test
+  - yarn add -D jest ts-jest @types/jest
+  - yarn ts-jest config:init
+
+## その他
+
+- VSCode の Debug Terminal で yarn dev を実行することにより、デバッグ実行が可能
+- VSCode Jest のプラグインを追加すれば、Jest の単体実行とデバッグ実行が可能
