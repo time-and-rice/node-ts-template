@@ -4,7 +4,8 @@
   - yarn add -D eslint
   - yarn eslint --init
   - yarn add -D eslint-plugin-simple-import-sort
-- [] Prettier
+- [x] Prettier
+  - yarn add -D prettier eslint-config-prettier
 - [] Path Alias
 - [] Env
 - [] Restart Dev Server
