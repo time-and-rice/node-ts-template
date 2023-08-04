@@ -9,6 +9,7 @@
 - [x] Path Alias
   - yarn add module-alias
   - yarn add -D tsconfig-paths
-- [] Env
+- [x] Env
+  - yarn add dotenv-cli
 - [] Restart Dev Server
 - [] Test
