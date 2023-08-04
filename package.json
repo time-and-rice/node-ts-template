@@ -7,15 +7,19 @@
   "scripts": {
     "prebuild": "rimraf ./dist",
     "build": "tsc",
-    "start": "node .",
-    "dev": "ts-node ./src/index.ts",
+    "start": "node -r module-alias/register .",
+    "dev": "ts-node -r tsconfig-paths/register ./src/index.ts",
     "lint": "eslint \"./{src,test}/**/*.{js,ts}\"",
     "lint:fix": "yarn lint --fix",
     "format": "prettier -l \"./{src,test}/**/*.{js,ts,json}\"",
     "format:fix": "yarn format --write"
   },
+  "_moduleAliases": {
+    "@": "dist"
+  },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "module-alias": "^2.2.3"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
@@ -28,6 +32,7 @@
     "prettier": "^3.0.1",
     "rimraf": "^5.0.1",
     "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.1.6"
   }
 }

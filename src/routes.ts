@@ -1,7 +1,7 @@
 import { Router } from "express";
 
-import { getHome } from "./handler/home";
-import { getMe } from "./handler/me";
+import { getHome } from "@/handler/home";
+import { getMe } from "@/handler/me";
 
 const homeRouter = Router();
 homeRouter.route("/").get(getHome);

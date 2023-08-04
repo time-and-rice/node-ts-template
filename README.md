@@ -6,7 +6,9 @@
   - yarn add -D eslint-plugin-simple-import-sort
 - [x] Prettier
   - yarn add -D prettier eslint-config-prettier
-- [] Path Alias
+- [x] Path Alias
+  - yarn add module-alias
+  - yarn add -D tsconfig-paths
 - [] Env
 - [] Restart Dev Server
 - [] Test
