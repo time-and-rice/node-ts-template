@@ -11,5 +11,6 @@
   - yarn add -D tsconfig-paths
 - [x] Env
   - yarn add dotenv-cli
-- [] Restart Dev Server
+- [x] Restart Dev Server
+  - yarn add -D nodemon
 - [] Test
