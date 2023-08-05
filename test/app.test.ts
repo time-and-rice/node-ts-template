@@ -18,6 +18,6 @@ describe("home", () => {
 describe("me", () => {
   test("get", async () => {
     const res = await request(app).get("/me");
-    expect(res.text).toBe("Hi from me in test env.");
+    expect(res.text).toBe("Hi from me.");
   });
 });
