@@ -2,6 +2,9 @@
   "name": "node-ts-template",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "_moduleAliases": {
+    "@": "dist"
+  },
   "author": "time-and-rice <time.and.rice@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -14,9 +17,6 @@
     "format": "prettier -l \"./{src,test}/**/*.{js,ts,json}\"",
     "format:fix": "yarn format --write",
     "test": "dotenv -e .env.test jest --runInBand --verbose"
-  },
-  "_moduleAliases": {
-    "@": "dist"
   },
   "dependencies": {
     "dotenv-cli": "^7.2.1",
