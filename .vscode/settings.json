@@ -4,5 +4,7 @@
     "source.fixAll.eslint": true,
     "source.addMissingImports": true
   },
-  "jest.autoRun": "off"
+  "jest.autoRun": "off",
+  "jest.jestCommandLine": "yarn test",
+  "testing.openTesting": "neverOpen"
 }

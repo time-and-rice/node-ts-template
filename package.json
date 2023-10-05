@@ -10,13 +10,13 @@
   "scripts": {
     "prebuild": "rimraf ./dist",
     "build": "tsc",
-    "start": "dotenv -e .env.production node -r module-alias/register .",
-    "dev": "dotenv -e .env.development nodemon -r tsconfig-paths/register ./src/index.ts",
+    "start": "dotenv -e .env.production -- node -r module-alias/register .",
+    "dev": "dotenv -e .env.development -- nodemon -r tsconfig-paths/register ./src/index.ts",
     "lint": "eslint \"./{src,test}/**/*.{js,ts}\"",
     "lint:fix": "yarn lint --fix",
     "format": "prettier -l \"./{src,test}/**/*.{js,ts,json}\"",
     "format:fix": "yarn format --write",
-    "test": "dotenv -e .env.test jest --runInBand --verbose"
+    "test": "dotenv -e .env.test -- jest --runInBand --verbose"
   },
   "dependencies": {
     "dotenv-cli": "^7.2.1",
